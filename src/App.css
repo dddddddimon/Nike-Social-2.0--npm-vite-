@@ -1,8 +1,3 @@
-ul li {
-  color: blueviolet;
-  list-style: decimal-leading-zero;
-}
-
 .app-wrapper {
   margin: 0 auto;
   display: grid;

@@ -1,32 +1,33 @@
+import { NavLink } from "react-router-dom";
 import s from "./Navigation.module.css";
 
 function Navigation() {
   return (
     <nav className={s.nav}>
       <div className={`${s.item} ${s.active}`}>
-        <a href="/profile" className={s.linkProfile}>
+        <NavLink to="/profile" className={s.linkProfile}>
           Profile
-        </a>
+        </NavLink>
       </div>
       <div className={`${s.item} ${s.active}`}>
-        <a href="/dialogs" className={s.linkProfile}>
+        <NavLink to="/dialogs" className={s.linkProfile}>
           Messages
-        </a>
+        </NavLink>
       </div>
       <div className={`${s.item} ${s.active}`}>
-        <a href="/news" className={s.linkProfile}>
+        <NavLink to="/news" className={s.linkProfile}>
           News
-        </a>
+        </NavLink>
       </div>
       <div className={`${s.item} ${s.active}`}>
-        <a href="/music" className={s.linkProfile}>
+        <NavLink to="/music" className={s.linkProfile}>
           Music
-        </a>
+        </NavLink>
       </div>
       <div className={`${s.item} ${s.active}`}>
-        <a href="/settings" className={s.linkProfile}>
+        <NavLink to="/settings" className={s.linkProfile}>
           Settings
-        </a>
+        </NavLink>
       </div>
     </nav>
   );
