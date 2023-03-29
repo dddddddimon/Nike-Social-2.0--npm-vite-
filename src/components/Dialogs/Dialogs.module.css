@@ -1,4 +1,23 @@
 .dialogstab {
   grid-area: c;
   background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  padding: 10px;
+}
+
+.dialogsnames {
+  color: black;
+}
+
+.dialogsnames .active {
+  color: white;
+}
+
+.dialogsnames .active:hover {
+  color: coral;
+}
+
+.messages {
+  color: white;
 }
