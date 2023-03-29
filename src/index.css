@@ -16,17 +16,14 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  /* color: #646cff; */
   text-decoration: inherit;
 }
 
-a.active {
+/* a.active {
   color: #213547;
 }
-
-a:hover {
-  color: blueviolet;
-}
+ */
 
 body {
   margin: 0;

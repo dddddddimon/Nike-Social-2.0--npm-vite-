@@ -6,18 +6,18 @@
   padding: 10px;
 }
 
-.dialogsnames {
+/* .dialogsnames {
   color: black;
 }
 
-.dialogsnames .active {
-  color: white;
+a:hover {
+  color: coral;
 }
 
-.dialogsnames .active:hover {
-  color: coral;
+a:active {
+  color: white;
 }
 
 .messages {
   color: white;
-}
+} */

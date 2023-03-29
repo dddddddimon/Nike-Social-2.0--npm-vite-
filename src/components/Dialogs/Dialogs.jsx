@@ -1,16 +1,28 @@
+import { NavLink } from "react-router-dom";
 import s from "./Dialogs.module.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function Dialogs() {
   return (
     <div className={s.dialogstab}>
       <div className={s.dialogsnames}>
-        <div className={`${s.dialog} ${s.active}`}>Sam</div>
-        <div className={s.dialog}>John</div>
-        <div className={s.dialog}>Petro</div>
-        <div className={s.dialog}>Ivan</div>
-        <div className={s.dialog}>Nika</div>
-        <div className={s.dialog}>Valera</div>
+        <div className={s.dialog + " " + s.active}>
+          <NavLink to="/dialogs/sam">Sam</NavLink>
+        </div>
+        <div className={`${s.dialog} ${s.active}`}>
+          <NavLink to="/dialogs/john">John</NavLink>
+        </div>
+        <div className={`${s.dialog} ${s.active}`}>
+          <NavLink to="/dialogs/petro">Petro</NavLink>
+        </div>
+        <div className={`${s.dialog} ${s.active}`}>
+          <NavLink to="/dialogs/ivan">Ivan</NavLink>
+        </div>
+        <div className={`${s.dialog} ${s.active}`}>
+          <NavLink to="/dialogs/nika">Nika</NavLink>
+        </div>
+        <div className={`${s.dialog} ${s.active}`}>
+          <NavLink to="/dialogs/valera">Valera</NavLink>
+        </div>
       </div>
       <div className={s.messages}>
         <div className={s.massege}>Hey there!</div>
