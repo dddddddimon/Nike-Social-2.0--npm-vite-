@@ -4,14 +4,14 @@
   padding: 10px;
 }
 
-.linkProfile {
-  color: aliceblue;
+.linkNav {
+  color: white;
 }
 
-a:hover {
+.nav a:active {
+  color: #213547;
+}
+
+.linkNav:hover {
   color: blueviolet;
-}
-
-a:active {
-  color: yellow;
 }

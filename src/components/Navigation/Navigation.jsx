@@ -4,28 +4,28 @@ import s from "./Navigation.module.css";
 function Navigation() {
   return (
     <nav className={s.nav}>
-      <div className={s.item}>
-        <NavLink to="/profile" className={s.linkProfile}>
+      <div>
+        <NavLink to="/profile" className={s.linkNav}>
           Profile
         </NavLink>
       </div>
-      <div className={s.item}>
-        <NavLink to="/dialogs" className={s.linkProfile}>
+      <div>
+        <NavLink to="/dialogs" className={s.linkNav}>
           Messages
         </NavLink>
       </div>
-      <div className={s.item}>
-        <NavLink to="/news" className={s.linkProfile}>
+      <div>
+        <NavLink to="/news" className={s.linkNav}>
           News
         </NavLink>
       </div>
-      <div className={s.item}>
-        <NavLink to="/music" className={s.linkProfile}>
+      <div>
+        <NavLink to="/music" className={s.linkNav}>
           Music
         </NavLink>
       </div>
-      <div className={s.item}>
-        <NavLink to="/settings" className={s.linkProfile}>
+      <div>
+        <NavLink to="/settings" className={s.linkNav}>
           Settings
         </NavLink>
       </div>

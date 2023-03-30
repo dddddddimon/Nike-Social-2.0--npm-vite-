@@ -6,18 +6,18 @@
   padding: 10px;
 }
 
-/* .dialogsnames {
-  color: black;
+.messages {
+  color: white;
 }
 
-a:hover {
+.exactDialog {
+  color: white;
+}
+
+.exactDialog:hover {
   color: coral;
 }
 
-a:active {
-  color: white;
+.exactDialog:active {
+  color: #213547;
 }
-
-.messages {
-  color: white;
-} */

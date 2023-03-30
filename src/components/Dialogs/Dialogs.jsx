@@ -5,23 +5,35 @@ function Dialogs() {
   return (
     <div className={s.dialogstab}>
       <div className={s.dialogsnames}>
-        <div className={s.dialog + " " + s.active}>
-          <NavLink to="/dialogs/sam">Sam</NavLink>
+        <div className={`${s.dialog} ${s.active}`}>
+          <NavLink to="/dialogs/sam" className={s.exactDialog}>
+            Sam
+          </NavLink>
         </div>
         <div className={`${s.dialog} ${s.active}`}>
-          <NavLink to="/dialogs/john">John</NavLink>
+          <NavLink to="/dialogs/john" className={s.exactDialog}>
+            John
+          </NavLink>
         </div>
         <div className={`${s.dialog} ${s.active}`}>
-          <NavLink to="/dialogs/petro">Petro</NavLink>
+          <NavLink to="/dialogs/petro" className={s.exactDialog}>
+            Petro
+          </NavLink>
         </div>
         <div className={`${s.dialog} ${s.active}`}>
-          <NavLink to="/dialogs/ivan">Ivan</NavLink>
+          <NavLink to="/dialogs/ivan" className={s.exactDialog}>
+            Ivan
+          </NavLink>
         </div>
         <div className={`${s.dialog} ${s.active}`}>
-          <NavLink to="/dialogs/nika">Nika</NavLink>
+          <NavLink to="/dialogs/nika" className={s.exactDialog}>
+            Nika
+          </NavLink>
         </div>
         <div className={`${s.dialog} ${s.active}`}>
-          <NavLink to="/dialogs/valera">Valera</NavLink>
+          <NavLink to="/dialogs/valera" className={s.exactDialog}>
+            Valera
+          </NavLink>
         </div>
       </div>
       <div className={s.messages}>
