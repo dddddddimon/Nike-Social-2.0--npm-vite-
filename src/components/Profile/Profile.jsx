@@ -8,8 +8,10 @@ function Profile() {
   return (
     <div className={s.content}>
       <Image />
-      <Avatar />
-      <Description />
+      <div className={s.mainUserInfo}>
+        <Avatar />
+        <Description />
+      </div>
       <MyPosts />
     </div>
   );

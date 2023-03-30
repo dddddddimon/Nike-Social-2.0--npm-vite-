@@ -5,8 +5,10 @@ import AddPost from "./AddPost/AddPost";
 
 function MyPosts() {
   return (
-    <div>
-      <div className={s.userposts}>My Posts</div>
+    <div className={s.content}>
+      <div className={s.userposts}>
+        <h3>My Posts</h3>
+      </div>
       <div>
         <UserPosts message="I like Nike so much!" />
         <UserPosts message="This is my new Nike account. Subscribe!" />
@@ -15,7 +17,9 @@ function MyPosts() {
         <AddPost />
       </div>
       <div className={s.posts}>
-        <div>New Posts</div>
+        <div>
+          <h3>New Posts</h3>
+        </div>
         <div>
           <PostOne message="Hey, nice to See you here!" likesCount="9" />
           <PostOne
