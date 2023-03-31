@@ -4,29 +4,38 @@ import PostOne from "./Posts/PostOne";
 import AddPost from "./AddPost/AddPost";
 
 function MyPosts() {
+  let postsData = [
+    { id: 1, message: "Hey there!", likesCount: "9" },
+    { id: 2, message: "Yo man! Whats up?", likesCount: "15" },
+    { id: 3, message: "Call me!", likesCount: "7" },
+    { id: 4, message: "Hello!", likesCount: "22" },
+  ];
+
   return (
     <div className={s.content}>
-      <div className={s.userposts}>
-        <h3>My Posts</h3>
-      </div>
       <div>
-        <UserPosts message="I like Nike so much!" />
-        <UserPosts message="This is my new Nike account. Subscribe!" />
+        <h3>Posts</h3>
       </div>
       <div>
         <AddPost />
       </div>
       <div className={s.posts}>
-        <div>
-          <h3>New Posts</h3>
-        </div>
-        <div>
-          <PostOne message="Hey, nice to See you here!" likesCount="9" />
-          <PostOne
-            message="Cool bro, let's hand out some time!"
-            likesCount="15"
-          />
-        </div>
+        <PostOne
+          message={postsData[0].message}
+          likesCount={postsData[0].likesCount}
+        />
+        <PostOne
+          message={postsData[1].message}
+          likesCount={postsData[1].likesCount}
+        />
+        <PostOne
+          message={postsData[2].message}
+          likesCount={postsData[2].likesCount}
+        />
+        <PostOne
+          message={postsData[3].message}
+          likesCount={postsData[3].likesCount}
+        />
       </div>
     </div>
   );

@@ -1,3 +1,6 @@
 .img {
-  width: 600px;
+  width: 1150px;
+  height: 80px;
+  object-fit: cover;
+  object-position: 100% 63%;
 }
