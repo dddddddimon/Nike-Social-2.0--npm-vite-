@@ -1,5 +1,5 @@
 import s from "./MyPosts.module.css";
-import UserPosts from "./UserPosts/UserPosts";
+
 import PostOne from "./Posts/PostOne";
 import AddPost from "./AddPost/AddPost";
 
