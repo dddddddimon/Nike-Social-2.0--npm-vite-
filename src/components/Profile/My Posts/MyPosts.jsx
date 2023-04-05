@@ -1,17 +1,9 @@
 import s from "./MyPosts.module.css";
-
 import PostOne from "./Posts/PostOne";
 import AddPost from "./AddPost/AddPost";
 
-function MyPosts() {
-  let posts = [
-    { id: 1, message: "Hey there!", likesCount: "9" },
-    { id: 2, message: "Yo man! Whats up?", likesCount: "15" },
-    { id: 3, message: "Call me!", likesCount: "7" },
-    { id: 4, message: "Hello!", likesCount: "22" },
-  ];
-
-  let postElements = posts.map((p) => (
+function MyPosts(props) {
+  let postElements = props.posts.map((p) => (
     <PostOne message={p.message} likesCount={p.likesCount} />
   ));
 

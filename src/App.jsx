@@ -5,15 +5,20 @@ import Navigation from "./components/Navigation/Navigation";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navigation />
         <Routes>
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/dialogs/*" element={<Dialogs />} />
+          <Route path="/profile" element={<Profile posts={props.posts} />} />
+          <Route
+            path="/dialogs/*"
+            element={
+              <Dialogs dialogs={props.dialogs} messages={props.messages} />
+            }
+          />
           {/* <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
           <Route path="/settings" element={<Settings />} /> */}

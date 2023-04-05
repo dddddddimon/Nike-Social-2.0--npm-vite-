@@ -4,7 +4,7 @@ import Image from "./Image/Image";
 import Avatar from "./Avatar/Avatar";
 import Description from "./Description/Description";
 
-function Profile() {
+function Profile(props) {
   return (
     <div className={s.content}>
       <Image />
@@ -12,7 +12,7 @@ function Profile() {
         <Avatar />
         <Description />
       </div>
-      <MyPosts />
+      <MyPosts posts={props.posts} />
     </div>
   );
 }
