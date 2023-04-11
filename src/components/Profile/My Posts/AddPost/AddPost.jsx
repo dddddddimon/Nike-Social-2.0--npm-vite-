@@ -1,12 +1,12 @@
 import s from "./AddPost.module.css";
 import React from "react";
 
-function AddPost() {
+function AddPost(props) {
   let newPostElement = React.createRef();
 
   let onAddPost = () => {
     let text = newPostElement.current.value;
-    alert(text);
+    props.addPost(text);
   };
 
   return (

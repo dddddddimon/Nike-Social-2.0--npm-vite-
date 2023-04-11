@@ -12,7 +12,7 @@ function Profile(props) {
         <Avatar />
         <Description />
       </div>
-      <MyPosts posts={props.posts} />
+      <MyPosts posts={props.posts} addPost={props.addPost} />
     </div>
   );
 }

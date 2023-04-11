@@ -13,7 +13,7 @@ function MyPosts(props) {
         <h3>Posts</h3>
       </div>
       <div>
-        <AddPost />
+        <AddPost addPost={props.addPost} />
       </div>
       <div className={s.posts}>{postElements}</div>
     </div>
