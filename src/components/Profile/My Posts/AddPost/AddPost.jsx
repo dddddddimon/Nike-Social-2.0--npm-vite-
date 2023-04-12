@@ -6,7 +6,9 @@ function AddPost(props) {
 
   let onAddPost = () => {
     let text = newPostElement.current.value;
+
     props.addPost(text);
+    newPostElement.current.value = "";
   };
 
   return (
