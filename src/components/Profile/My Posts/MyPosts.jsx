@@ -13,7 +13,11 @@ function MyPosts(props) {
         <h3>Posts</h3>
       </div>
       <div>
-        <AddPost addPost={props.addPost} />
+        <AddPost
+          addPost={props.addPost}
+          newPostText={props.newPostText}
+          updateNewPostText={props.updateNewPostText}
+        />
       </div>
       <div className={s.posts}>{postElements}</div>
     </div>

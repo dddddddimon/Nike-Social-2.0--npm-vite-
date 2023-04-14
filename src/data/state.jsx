@@ -8,6 +8,7 @@ let state = {
       { id: 3, message: "Call me!", likesCount: "7" },
       { id: 4, message: "Hello!", likesCount: "22" },
     ],
+    newPostText: "Enter Your Message",
   },
 
   messagesPage: {
@@ -37,6 +38,11 @@ export let addPost = (postMessage) => {
     likesCount: 0,
   };
   state.profilePage.posts.push(newPost);
+  rerendeEntireTree(state);
+};
+
+export let updateNewPostText = (newText) => {
+  state.profilePage.newPostText = newText;
   rerendeEntireTree(state);
 };
 
